@@ -7,7 +7,16 @@
     <title>Contador</title>
 </head>
 <body>
-    <h1>Contador</h1>
+        <h1 id="salida">0</h1>
+    <input type="button" value="Contar" onclick="sumar()">
+     <script>
+        var contador = 0;
+        function sumar(){
+            contador++;
+            document.getElementById("salida").innerHTML = contador;
+        }
+     </script> 
+    
     
 </body>
 </html>
